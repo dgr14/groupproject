@@ -1,0 +1,5 @@
+.entryDiv{
+    grid-column: 2/-1;
+    border: 2px solid black;
+    background-color: ivory;
+}

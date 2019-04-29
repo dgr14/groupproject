@@ -1,0 +1,7 @@
+.viewDiv{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    
+
+}
