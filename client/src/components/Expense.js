@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AddExpenseForm from './AddExpenseForm.js'
 import AddUserForm from './AddUserForm.js'
+import Styles from './Expense.module.css'
 // import { withExpenses } from '../context/ExpenseProvider.js'
 
 class Expense extends Component {
@@ -57,7 +58,7 @@ class Expense extends Component {
         backgroundSize: "100%"
     }
         return (
-        <div className="container">
+        <div className={Styles.container}>
             <div style={styles}>
                 {/* syntax for declaring fragments, looks like empty tags but acts as div but without changing parent/chid relationship  */}
             {/* { this.state.editToggle ?
