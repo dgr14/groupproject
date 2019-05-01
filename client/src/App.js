@@ -5,6 +5,7 @@ import View from './View';
 import Footer from './Footer';
 import Styles from './App.module.css';
 import Entry from './Entry';
+import ExpenseList from './components/ExpenseList';
 
 function App() {
   return (
