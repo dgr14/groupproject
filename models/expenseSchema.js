@@ -2,6 +2,18 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const expenseSchema = new Schema({
+    income1: {
+        type: String,
+        required: true
+    },
+    income2: {
+        type: String,
+        required: true
+    },
+    income3: {
+        type: String,
+        required: true
+    },
     mortgageOrRent: {
         type: String,
         required: false
@@ -29,10 +41,47 @@ const expenseSchema = new Schema({
     phone: {
         type: String,
         required: true
+    },
+    transportation: {
+        type: String,
+        required: true
+    },
+    insurance: {
+        type: String,
+        required: true
+    },
+    loans: {
+        type: String,
+        required: true
+    },
+    memberships: {
+        type: String,
+        required: true
+    },
+    groceries: {
+        type: String,
+        required: true
+    },
+    clothing: {
+        type: String,
+        required: true
+    },
+    education: {
+        type: String,
+        required: true
+    },
+    personalCare: {
+        type: String,
+        required: true
+    },
+    entertainment: {
+        type: String,
+        required: true
+    },
+    charities: {
+        type: String,
+        required: true
     }
 })
                             // Model Name    // Model Blueprint
 module.exports = mongoose.model("Expense", expenseSchema)
-
-
-
