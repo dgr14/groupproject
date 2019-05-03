@@ -100,5 +100,4 @@ export default AddExpenseForm
             <input type="checkbox" name="xxx" value="xxx"/>xxx
             <input type="number" name="xxxAmount" value={xxxAmount} placeholder= "Amount" onChange={handleChange}/>
             Due: <input type="date" name="xxxDate" value={xxxDate} placeholder= "Amount" onChange={handleChange}/><br></br>
-
 */
