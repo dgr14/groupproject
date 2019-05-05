@@ -29,7 +29,8 @@ input {
     padding: 5px 10px;
 }
 .app-wrapper{
-    height: 100vh;
+    /* height: 100vh; */
+    height: 200px;
 }
 .login-wrapper{
     width: 50%;
