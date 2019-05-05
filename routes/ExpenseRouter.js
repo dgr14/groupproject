@@ -35,7 +35,7 @@ expenseRouter.get("/", (req , res, next) => {
 // })
 
 // POST One
-throneRouter.post("/", (req, res, next) => {
+expenseRouter.post("/", (req, res, next) => {
     // create new Object using the character Schema
     const newExpense = new Expense(req.body)
     // .save() saves a new object to the DB collection

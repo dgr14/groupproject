@@ -29,9 +29,9 @@ class Signup extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.signup(this.state)
-            .then(() => this.clearInputs())
+            .then(() => this.props.history.push("/expenses"))
             .catch(err => {
-                this.setState({errorMessage: err.data})
+                this.setState({errorMessage: err.response.data.message})
             })
     }
 
@@ -54,10 +54,12 @@ class Signup extends Component {
                         placeholder="Password"/>
                     <button type="submit">Create Account</button>
                 </form>
+
                 {
                     this.state.errorMessage &&
                     <p style={{color: "red"}}>{this.state.errorMessage}</p>
                 }
+
             </div>
         )
     }
