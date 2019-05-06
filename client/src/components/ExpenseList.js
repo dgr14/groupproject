@@ -3,6 +3,7 @@ import Expense from './Expense.js'
 import AddUserForm from './AddUserForm.js'
 import SignInForm from './SignInForm.js'
 import AddExpenseForm from './AddExpenseForm.js'
+import { withContext } from '../AppContext'
 // import { withExpenses } from '../context/ExpenseProvider.js'
 
 // // Model I'm using to build state with the class below
@@ -24,36 +25,47 @@ class ExpenseList extends Component {
         this.state = {
             fullName: "", 
             username: "", 
-            mortgageOrRent: "", 
+            mortgageOrRent: false, 
             mortgageOrRentAmount: "", 
             mortgageOrRentDate: "", 
-            electricity: "", 
+            heatingOilOrGas: false, 
             oil: "",
             oilAmount: "",
-            cable: "",
-            internet: "",
-            water: "",
-            phone: "",
+            cable: false,
+            internet: false,
+            water: false,
+            phone: false,
+            electricity: false,
             electricityAmount: "", 
             electricityDate: "", 
+            transportation: false,
             transportationAmount: "", 
             transportationDate: "", 
+            insurance: false,
             insuranceAmount: "", 
             insuranceDate: "", 
+            loans: false,
             loansAmount: "", 
             loansDate: "", 
+            memeberships: false,
             membershipsAmount: "", 
             membershipsDate: "", 
+            groceries: false,
             groceriesAmount: "", 
             groceriesDate: "", 
+            clothing: false,
             clothingAmount: "", 
             clothingDate: "", 
+            education: false,
             educationAmount: "", 
             educationDate: "", 
+            personalCare: false,
             personalCareAmount: "", 
             personalCareDate: "",  
+            entertainment: false,
             entertainmentAmount: "", 
             entertainmentDate: "", 
+            charities: false,
             charitiesAmount: "", 
             charitiesDate: "", 
             income1: false, 
@@ -62,7 +74,7 @@ class ExpenseList extends Component {
             income2: false, 
             income2Amount: "", 
             income2Date: "", 
-            income3: "", 
+            income3: false, 
             income3Amount: "", 
             income3Date: ""
             
@@ -77,12 +89,19 @@ class ExpenseList extends Component {
             [name]: value
         })
     }
+    
+    handleSubmit = (e) => {
+        e.preventDefault()
+        this.props.addExpense(this.state)
+
+    }
 
     render(){
-
+        console.log(this.props)
         return(
             <div>
                 <AddExpenseForm 
+                    handleSubmit = {this.handleSubmit}
                     handleChange = {this.handleChange}
                     {...this.state}
                 />
@@ -95,4 +114,4 @@ console.log(ExpenseList)
 
 
 // export default withExpenses(ExpenseList)
-export default ExpenseList
+export default withContext(ExpenseList)
