@@ -2,17 +2,22 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const expenseSchema = new Schema({
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        required: true
+    },
     income1: {
         type: String,
-        required: true
+        required: false
     },
     income2: {
         type: String,
-        required: true
+        required: false
     },
     income3: {
         type: String,
-        required: true
+        required: false
     },
     mortgageOrRent: {
         type: String,
@@ -20,67 +25,67 @@ const expenseSchema = new Schema({
     },
     electricity: {
         type: String,
-        required: true
+        required: false
     },
     heatingOilOrGas: {
         type: String,
-        required: true
+        required: false
     },
     internet: {
         type: String,
-        required: true
+        required: false
     },
     cable: {
         type: String,
-        required: true
+        required: false
     },
     water: {
         type: String,
-        required: true
+        required: false
     },
     phone: {
         type: String,
-        required: true
+        required: false
     },
     transportation: {
         type: String,
-        required: true
+        required: false
     },
     insurance: {
         type: String,
-        required: true
+        required: false
     },
     loans: {
         type: String,
-        required: true
+        required: false
     },
     memberships: {
         type: String,
-        required: true
+        required: false
     },
     groceries: {
         type: String,
-        required: true
+        required: false
     },
     clothing: {
         type: String,
-        required: true
+        required: false
     },
     education: {
         type: String,
-        required: true
+        required: false
     },
     personalCare: {
         type: String,
-        required: true
+        required: false
     },
     entertainment: {
         type: String,
-        required: true
+        required: false
     },
     charities: {
         type: String,
-        required: true
+        required: false
     }
 })
                             // Model Name    // Model Blueprint

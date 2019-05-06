@@ -34,7 +34,13 @@ class Signup extends Component {
                 this.setState({errorMessage: err.response.data.message})
             })
     }
-
+/*
+        .then(() => this.clearInputs())
+        .catch(err => {
+            this.setState({errorMessage: err.data})
+        })
+}
+*/
     render() {
         return (
             <div className="form-wrapper">
