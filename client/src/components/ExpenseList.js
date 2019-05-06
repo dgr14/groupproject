@@ -5,20 +5,20 @@ import SignInForm from './SignInForm.js'
 import AddExpenseForm from './AddExpenseForm.js'
 // import { withExpenses } from '../context/ExpenseProvider.js'
 
-// Model I'm using to build state with the class below
-const ExpenseList = (props) => {
-    const { getExpenses, expenses, history } = props
-    return (
-        <div className="container">
-            <AddExpenseForm /><br></br>
-            <button onClick={getExpenses}>Get Financial Report</button>
-            <button onClick={() => history.push("/addExpense")}>Add New Expense/Income</button><br></br><br></br>
-            {/* { expenses.map(expense => <Expense key={expense._id} {...expense}/>)}  */}
-        </div>
-    )
-}
+// // Model I'm using to build state with the class below
+// const ExpenseList = (props) => {
+//     const { getExpenses, expenses, history } = props
+//     return (
+//         <div className="container">
+//             <AddExpenseForm /><br></br>
+//             <button onClick={getExpenses}>Get Financial Report</button>
+//             <button onClick={() => history.push("/addExpense")}>Add New Expense/Income</button><br></br><br></br>
+//             {/* { expenses.map(expense => <Expense key={expense._id} {...expense}/>)}  */}
+//         </div>
+//     )
+// }
 
-class addExpenseList extends Component {
+class ExpenseList extends Component {
     constructor(){
         super()
         this.state = {
@@ -28,6 +28,12 @@ class addExpenseList extends Component {
             mortgageOrRentAmount: "", 
             mortgageOrRentDate: "", 
             electricity: "", 
+            oil: "",
+            oilAmount: "",
+            cable: "",
+            internet: "",
+            water: "",
+            phone: "",
             electricityAmount: "", 
             electricityDate: "", 
             transportationAmount: "", 
@@ -50,10 +56,10 @@ class addExpenseList extends Component {
             entertainmentDate: "", 
             charitiesAmount: "", 
             charitiesDate: "", 
-            income1: "", 
+            income1: false, 
             income1Amount: "", 
             income1Date: "", 
-            income2: "", 
+            income2: false, 
             income2Amount: "", 
             income2Date: "", 
             income3: "", 
@@ -77,6 +83,7 @@ class addExpenseList extends Component {
         return(
             <div>
                 <AddExpenseForm 
+                    handleChange = {this.handleChange}
                     {...this.state}
                 />
             </div>
@@ -84,7 +91,7 @@ class addExpenseList extends Component {
     }
 
 }
-console.log(addExpenseList)
+console.log(ExpenseList)
 
 
 // export default withExpenses(ExpenseList)
