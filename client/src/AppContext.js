@@ -25,7 +25,7 @@ export class AppContextProvider extends Component {
     }
 
     getExpenses = () => {
-        return expenseAxios.get("/api/expense")
+        return expenseAxios.get("/api/expenses")
             .then(response => {
                 this.setState({ expenses: response.data });
                 return response;
@@ -33,7 +33,7 @@ export class AppContextProvider extends Component {
     }
 
     addExpense = (newExpense) => {
-        return expenseAxios.post("/api/expense/", newExpense)
+        return expenseAxios.post("/api/expenses/", newExpense)
             .then(response => {
                 this.setState(prevState => {
                     return { expenses: [...prevState.expenses, response.data] }
@@ -43,7 +43,7 @@ export class AppContextProvider extends Component {
     }
 
     editExpense = (expenseId, expense) => {
-        return expenseAxios.put(`/api/expense/${expenseId}`, expense)
+        return expenseAxios.put(`/api/expenses/${expenseId}`, expense)
             .then(response => {
                 this.setState(prevState => {
                     const updatedExpenses = prevState.expenses.map(expense => {
@@ -56,7 +56,7 @@ export class AppContextProvider extends Component {
     }
 
     deleteExpense = (expenseId) => {
-        return expenseAxios.delete(`/api/expense/${expenseId}`)
+        return expenseAxios.delete(`/api/expenses/${expenseId}`)
             .then(response => {
                 this.setState(prevState => {
                     const updatedExpenses = prevState.expenses.filter(expense => {

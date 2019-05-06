@@ -5,13 +5,16 @@ import View from './View';
 import Footer from './Footer';
 import Styles from './App.module.css';
 import Entry from './Entry';
+import { withContext } from "./AppContext"
 // import ExpenseList from './components/ExpenseList';
 
-function MainView() {
+function MainView(props) {
   return (
     <div className={Styles.mainReturnDiv}>
       <Header />
-
+      <div>
+        <button onClick={() => props.logout()}>Logout</button>
+      </div>
       <div className={Styles.viewDiv}>
       <Navbar />
       <Entry />
@@ -23,4 +26,4 @@ function MainView() {
   );
 }
 
-export default MainView;
+export default withContext(MainView)
