@@ -3,6 +3,9 @@
     background-color: green;
     text-align: center;
     border: 2.5px solid black;
+    color: gold;
+    font-weight: 800;
+    padding: 10px;
 }
 
 h1{

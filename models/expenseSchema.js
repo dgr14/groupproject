@@ -8,84 +8,184 @@ const expenseSchema = new Schema({
         required: true
     },
     income1: {
-        type: String,
-        required: false
+        type: String
     },
     income2: {
-        type: String,
-        required: false
+        type: String
     },
     income3: {
-        type: String,
-        required: false
+        type: String
     },
     mortgageOrRent: {
-        type: String,
-        required: false
+        type: String
     },
     electricity: {
-        type: String,
-        required: false
+        type: String
     },
     heatingOilOrGas: {
-        type: String,
-        required: false
+        type: String
     },
     internet: {
-        type: String,
-        required: false
+        type: String
     },
     cable: {
-        type: String,
-        required: false
+        type: String
     },
     water: {
-        type: String,
-        required: false
+        type: String
     },
     phone: {
-        type: String,
-        required: false
+        type: String
     },
     transportation: {
-        type: String,
-        required: false
+        type: String
     },
     insurance: {
-        type: String,
-        required: false
+        type: String
     },
     loans: {
-        type: String,
-        required: false
+        type: String
     },
     memberships: {
-        type: String,
-        required: false
+        type: String
     },
     groceries: {
-        type: String,
-        required: false
+        type: String
     },
     clothing: {
-        type: String,
-        required: false
+        type: String
     },
     education: {
-        type: String,
-        required: false
+        type: String
     },
     personalCare: {
-        type: String,
-        required: false
+        type: String
     },
     entertainment: {
-        type: String,
-        required: false
+        type: String
     },
     charities: {
-        type: String,
-        required: false
+        type: String
+    },
+    income1Amount: {
+        type: String
+    },
+    income2Amount: {
+        type: String
+    },
+    income3Amount: {
+        type: String
+    },
+    mortgageOrRentAmount: {
+        type: String
+    },
+    electricityAmount: {
+        type: String
+    },
+    heatingOilOrGasAmount: {
+        type: String
+    },
+    internetAmount: {
+        type: String
+    },
+    cableAmount: {
+        type: String
+    },
+    waterAmount: {
+        type: String
+    },
+    phoneAmount: {
+        type: String
+    },
+    transportationAmount: {
+        type: String
+    },
+    insuranceAmount: {
+        type: String
+    },
+    loansAmount: {
+        type: String
+    },
+    membershipsAmount: {
+        type: String
+    },
+    groceriesAmount: {
+        type: String
+    },
+    clothingAmount: {
+        type: String
+    },
+    educationAmount: {
+        type: String
+    },
+    personalCareAmount: {
+        type: String
+    },
+    entertainmentAmount: {
+        type: String
+    },
+    charitiesAmount: {
+        type: String
+    },
+    income1Date: {
+        type: String
+    },
+    income2Date: {
+        type: String
+    },
+    income3Date: {
+        type: String
+    },
+    mortgageOrRentDate: {
+        type: String
+    },
+    electricityDate: {
+        type: String
+    },
+    heatingOilOrGasDate: {
+        type: String
+    },
+    internetDate: {
+        type: String
+    },
+    cableDate: {
+        type: String
+    },
+    waterDate: {
+        type: String
+    },
+    phoneDate: {
+        type: String
+    },
+    transportationDate: {
+        type: String
+    },
+    insuranceDate: {
+        type: String
+    },
+    loansDate: {
+        type: String
+    },
+    membershipsDate: {
+        type: String
+    },
+    groceriesDate: {
+        type: String
+    },
+    clothingDate: {
+        type: String
+    },
+    educationDate: {
+        type: String
+    },
+    personalCareDate: {
+        type: String
+    },
+    entertainmentDate: {
+        type: String
+    },
+    charitiesDate: {
+        type: String
     }
 })
                             // Model Name    // Model Blueprint
