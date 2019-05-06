@@ -10,7 +10,7 @@ import MainView from './MainView';
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
 import Auth from "./auth/Auth";
-import {withContext} from "./AppContext";
+import { withContext } from "./AppContext"
 import ProtectedRoute from "./auth/ProtectedRoute";
 import ExpenseList from './components/ExpenseList';
 
