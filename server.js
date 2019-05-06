@@ -26,7 +26,7 @@ mongoose.connect("mongodb://localhost:27017/expenses",
 
 // Routes - Endpoints
 app.use("/auth", require("./routes/authRouter"));
-app.use("/expenses", require('./routes/expenseRouter'))
+app.use("/api/expenses", require('./routes/expenseRouter'))
 // app.use("/api/expenses", require("./routes/expenseRouter"));
 
 // Global Server Error Handler - handles ANY thrown error from ANY of our routes above

@@ -9,55 +9,50 @@ import Styles from './App.module.css';
 import MainView from './MainView';
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
-// import ProtectedRoute from "./auth/ProtectedRoute";
-// import ExpenseList from './components/ExpenseList';
+import Auth from "./auth/Auth";
+import {withContext} from "./AppContext";
+import ProtectedRoute from "./auth/ProtectedRoute";
+import ExpenseList from './components/ExpenseList';
 
 function App(props) {
     return (
         <div>
-            <div className="app-wrapper">
-                <Route exact path={"/"} render={() => !props.token ? <Login page /> : <MainView />} />
+            {/* <div className="app-wrapper">
                 <Signup />
             </div>
             <nav className="login-wrapper">
             {
                 !props.token ?
-                    <>
+                <>
                         <div>
                             <Link to="/signup">Sign Up</Link><br></br>
-                            <Link render={() => !props.token ? <Login /> : <View />}>Sign Up!</Link>
-                        </div>
-                        <div>
+                            <Link render={() => !props.token ? <Login /> : <View />}>Sign Up!</Link><br></br>
                             <Link to="/login">Log In</Link>
                         </div>
                     </>
                 :
-                    <>
+                <>
                         <div>
                             <Link to="/Expenses">Expenses</Link>
-                        </div>
-                        <div>
                             <button onClick={() => props.logout()}>Logout</button>
                         </div>
                     </>
             }
-            </nav>
+            </nav> */}
                 <Switch>
-                    {/* <Route className={Styles.viewDiv} Navbar/> */}
-                    {/* <Route className={Styles.viewDiv} Entry/> */}
                     {/* <Route className={Styles.viewDiv} View/> */}
+                    <Route exact path={"/"} render={() => !props.token ? <Auth /> : <Redirect to="/expenses"/>} />
                     {/* <Route path="/signup" component={Signup}/> */}
                     {/* <Route path="/login" component={Login}/> */}
-                    {/* <Route path="/expenses" component={ExpenseList}/> */}
+                    <ProtectedRoute path="/expenses" component={MainView}/>
                     {/* <ProtectedRoute path="/expenses" component={ExpenseList}/> */}
-                    {/* <Route exact path="/" render={() => <Redirect to="/expenses"/>}/> */}
                 </Switch>
-                <MainView />
+                {/* <MainView /> */}
         </div>
     )
 }
 
-export default App;
+export default withContext(App);
 
 {/* 
 

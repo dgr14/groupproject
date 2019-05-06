@@ -31,10 +31,16 @@ class LoginForm extends Component {
         this.props.login(this.state)
             .then(() => this.props.history.push("/expenses"))
             .catch(err => {
-                this.setState({errorMessage: err.response.data.message})
+                // this.setState({errorMessage: err.response.data.message})
             })
     }
-
+/*
+        .then(() => this.clearInputs())
+        .catch(err => {
+            this.setState({errorMessage: err.data})
+        })
+}
+*/
     render() {
         return (
             <div className="form-wrapper">
@@ -58,7 +64,7 @@ class LoginForm extends Component {
                     this.state.errorMessage &&
                     <p style={{color: "red"}}>{this.state.errorMessage}</p>
                 }
-                Please click here to sign up and create your own account.
+                {/* Please click here to sign up and create your own account. */}
 {/* Please click <a render={() => <Redirect to="<MainView />">here</a> to sign up and create your own account. */}
             </div>
         )
