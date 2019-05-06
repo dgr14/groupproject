@@ -13,7 +13,7 @@ function MainView(props) {
     <div className={Styles.mainReturnDiv}>
       <Header />
       <div>
-        <button onClick={() => props.logout()}>Logout</button>
+        
       </div>
       <div className={Styles.viewDiv}>
       <Navbar />

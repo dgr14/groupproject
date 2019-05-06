@@ -1,7 +1,8 @@
 import React from 'react'
 import Styles from './Navbar.module.css'
+import { withContext } from "./AppContext"
 
-function Navbar() {
+function Navbar(props) {
     return (
         <div className={Styles.navDiv}>
              {/* here I would like to create a place for the user to be displayed */}
@@ -9,8 +10,9 @@ function Navbar() {
 
             <button>New Expense</button>
             <button>View Expenses</button>
+            <button onClick={() => props.logout()}>Logout</button>
         </div>
     )
 }
 
-export default Navbar
+export default withContext(Navbar)
