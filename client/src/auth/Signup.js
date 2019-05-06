@@ -31,7 +31,7 @@ class Signup extends Component {
         this.props.signup(this.state)
             .then(() => this.props.history.push("/expenses"))
             .catch(err => {
-                this.setState({errorMessage: err.response.data.message})
+                // this.setState({errorMessage: err.response.data.message})
             })
     }
 /*
