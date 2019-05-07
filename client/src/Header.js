@@ -3,8 +3,14 @@ import Styles from './Header.module.css'
 
 function Header() {
     return (
-        <div className={Styles.headerReturnDiv}>
-            <h1>FinTracker</h1>
+        <div>
+            <div className= {Styles.imgDiv}>
+
+            </div>
+
+            <div className={Styles.headerReturnDiv}>
+                <h1>FinTracker</h1>
+            </div>
         </div>
     )
 }
