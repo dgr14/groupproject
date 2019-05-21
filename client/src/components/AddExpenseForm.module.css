@@ -1,0 +1,11 @@
+.expenseTitle{
+    display: inline;
+}
+/* .expenseListStyle > li{
+    
+} */
+.expenseListStyle > li > p{
+    display: inline-block;
+    text-align: left;
+    width: 170px;
+}

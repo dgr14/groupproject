@@ -2,13 +2,14 @@ import React from 'react';
 // import { Route, Switch, Link, Redirect } from "react-router-dom";
 import Signup from "./Signup";
 import Login from "./Login";
+import Styles from "./Auth.module.css"
 // import MainView from '../MainView';
 // import ProtectedRoute from "./ProtectedRoute";
 // import ExpenseList from '../components/ExpenseList';
 
 function Auth() {
     return (
-        <div>
+        <div className={Styles.authReturnDiv}>
             <Login />
             <Signup />
         </div>

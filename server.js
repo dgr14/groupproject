@@ -6,17 +6,18 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const expressJwt = require("express-jwt");
 const PORT = process.env.PORT || 7000
+const path = require("path")
 // const PORT = process.env.PORT || 5000;
 
 // Middlewares for every request 
 app.use(express.json()) // req.body = Object from POST and PUT requests
 app.use(morgan('dev'))
-app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "client", "build")))
 app.use("/api", expressJwt({ secret: process.env.SECRET }));
 
 // Connect to mongoDB
 mongoose.set('useCreateIndex', true);
-mongoose.connect("mongodb://localhost:27017/expenses",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/expenses",
     { useNewUrlParser: true },
     (err) => {
         if (err) throw err;
@@ -36,6 +37,10 @@ app.use((err, req, res, next) => {
         res.status(err.status)
     }
     return res.send({ message: err.message });
+});
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
 app.listen(PORT, () => {

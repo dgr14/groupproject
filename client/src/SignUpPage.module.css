@@ -1,0 +1,7 @@
+/* Main wrapper nav */
+.loginWrapper{
+    display: flex;
+    align-content: center;
+}
+
+/* smaller div holding the 4 different input boxes */

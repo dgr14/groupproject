@@ -8,184 +8,184 @@ const expenseSchema = new Schema({
         required: true
     },
     income1: {
-        type: String
+        type: Boolean
     },
     income2: {
-        type: String
+        type: Boolean
     },
     income3: {
-        type: String
+        type: Boolean
     },
     mortgageOrRent: {
-        type: String
+        type: Boolean
     },
     electricity: {
-        type: String
+        type: Boolean
     },
     heatingOilOrGas: {
-        type: String
+        type: Boolean
     },
     internet: {
-        type: String
+        type: Boolean
     },
     cable: {
-        type: String
+        type: Boolean
     },
     water: {
-        type: String
+        type: Boolean
     },
     phone: {
-        type: String
+        type: Boolean
     },
     transportation: {
-        type: String
+        type: Boolean
     },
     insurance: {
-        type: String
+        type: Boolean
     },
     loans: {
-        type: String
+        type: Boolean
     },
     memberships: {
-        type: String
+        type: Boolean
     },
     groceries: {
-        type: String
+        type: Boolean
     },
     clothing: {
-        type: String
+        type: Boolean
     },
     education: {
-        type: String
+        type: Boolean
     },
     personalCare: {
-        type: String
+        type: Boolean
     },
     entertainment: {
-        type: String
+        type: Boolean
     },
     charities: {
-        type: String
+        type: Boolean
     },
     income1Amount: {
-        type: String
+        type: Boolean
     },
     income2Amount: {
-        type: String
+        type: Boolean
     },
     income3Amount: {
-        type: String
+        type: Boolean
     },
     mortgageOrRentAmount: {
-        type: String
+        type: Boolean
     },
     electricityAmount: {
-        type: String
+        type: Boolean
     },
     heatingOilOrGasAmount: {
-        type: String
+        type: Boolean
     },
     internetAmount: {
-        type: String
+        type: Boolean
     },
     cableAmount: {
-        type: String
+        type: Boolean
     },
     waterAmount: {
-        type: String
+        type: Boolean
     },
     phoneAmount: {
-        type: String
+        type: Boolean
     },
     transportationAmount: {
-        type: String
+        type: Boolean
     },
     insuranceAmount: {
-        type: String
+        type: Boolean
     },
     loansAmount: {
-        type: String
+        type: Boolean
     },
     membershipsAmount: {
-        type: String
+        type: Boolean
     },
     groceriesAmount: {
-        type: String
+        type: Boolean
     },
     clothingAmount: {
-        type: String
+        type: Boolean
     },
     educationAmount: {
-        type: String
+        type: Boolean
     },
     personalCareAmount: {
-        type: String
+        type: Boolean
     },
     entertainmentAmount: {
-        type: String
+        type: Boolean
     },
     charitiesAmount: {
-        type: String
+        type: Boolean
     },
     income1Date: {
-        type: String
+        type: Boolean
     },
     income2Date: {
-        type: String
+        type: Boolean
     },
     income3Date: {
-        type: String
+        type: Boolean
     },
     mortgageOrRentDate: {
-        type: String
+        type: Boolean
     },
     electricityDate: {
-        type: String
+        type: Boolean
     },
     heatingOilOrGasDate: {
-        type: String
+        type: Boolean
     },
     internetDate: {
-        type: String
+        type: Boolean
     },
     cableDate: {
-        type: String
+        type: Boolean
     },
     waterDate: {
-        type: String
+        type: Boolean
     },
     phoneDate: {
-        type: String
+        type: Boolean
     },
     transportationDate: {
-        type: String
+        type: Boolean
     },
     insuranceDate: {
-        type: String
+        type: Boolean
     },
     loansDate: {
-        type: String
+        type: Boolean
     },
     membershipsDate: {
-        type: String
+        type: Boolean
     },
     groceriesDate: {
-        type: String
+        type: Boolean
     },
     clothingDate: {
-        type: String
+        type: Boolean
     },
     educationDate: {
-        type: String
+        type: Boolean
     },
     personalCareDate: {
-        type: String
+        type: Boolean
     },
     entertainmentDate: {
-        type: String
+        type: Boolean
     },
     charitiesDate: {
-        type: String
+        type: Boolean
     }
 })
                             // Model Name    // Model Blueprint

@@ -2,3 +2,13 @@
     height: 250px;
     overflow-y: scroll;
 }
+.expenseReturnDiv > ul > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.expenseReturnDiv > ul > li > p{
+    width: 200px;
+    text-align: left;
+}

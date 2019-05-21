@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { withContext } from "./AppContext"
+import Styles from "./SignUpPage.module.css"
 
 function SignInPage(props) {
     return (
-        <nav className="login-wrapper">
-            <div className="nav-link">
+        <nav className={Styles.loginWrapper}>
+            <div className={Styles.navLink}>
                 <Link to="/signup">Sign Up</Link>
             </div>
             <div className="nav-link">

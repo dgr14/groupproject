@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withContext } from "../AppContext"
+import Styles from "./Login.module.css"
 
 class LoginForm extends Component {
     constructor() {
@@ -58,7 +59,7 @@ class LoginForm extends Component {
                         name="password"
                         type="password"
                         placeholder="password"/>
-                    <button type="submit">Submit</button>
+                    <button className={Styles.loginButton} type="submit">Submit</button>
                 </form>
                 {
                     this.state.errorMessage &&
