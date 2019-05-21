@@ -9,7 +9,7 @@ function Header() {
             </div>
 
             <div className={Styles.headerReturnDiv}>
-                <h1>FinTracker</h1>
+                <h1 className={Styles.headerText}>FinTracker</h1>
             </div>
         </div>
     )

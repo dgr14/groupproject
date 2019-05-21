@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withContext } from "../AppContext"
+import Styles from "./Signup.module.css"
 
 class Signup extends Component {
     constructor() {
@@ -43,7 +44,7 @@ class Signup extends Component {
 */
     render() {
         return (
-            <div className="form-wrapper">
+            <div className={Styles.formWrapper}>
                 <form onSubmit={this.handleSubmit}>
                     <h3>Sign Up</h3>
                     <input
@@ -58,7 +59,7 @@ class Signup extends Component {
                         name="password"
                         type="password"
                         placeholder="Password"/>
-                    <button type="submit">Create Account</button>
+                    <button className={Styles.signupButton} type="submit">Create Account</button>
                 </form>
 
                 {

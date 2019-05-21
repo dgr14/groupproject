@@ -12,6 +12,7 @@ class Expense extends Component {
             fullName: this.props.fullName,
             username: this.props.username,
             expenseAmount: this.props.expenseAmount
+            
         }
     }
 
