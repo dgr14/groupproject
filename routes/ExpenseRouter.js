@@ -38,6 +38,7 @@ expenseRouter.get("/", (req , res, next) => {
 // POST One
 expenseRouter.post("/", (req, res, next) => {
     // create new Object using the expense Schema
+    // Add user ID to the object
     req.body.user = req.user._id
     const expense = new Expense(req.body)
     // Set the user property of an expense to req.user._id (logged-in user's `_id` property)
