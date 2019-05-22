@@ -1,5 +1,8 @@
-.expenseTitle{
+.expIncTitle{
     display: inline;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 /* .expenseListStyle > li{
     
@@ -7,5 +10,19 @@
 .expenseListStyle > li > p{
     display: inline-block;
     text-align: left;
-    width: 170px;
+    width: 220px;
+}
+.expenseListStyle > input.checkbox{
+    align-items: center;
+}
+.titles{
+    margin: 20px;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.addExpenseButton{
+    margin: 20px;
+    font-weight: bold;
+    width: 12em;
+    height: 2.75em;
 }

@@ -1,5 +1,6 @@
 .navDiv{
-    border: solid 2px black;
+    border-right: solid 2.5px black;
+    border-left: solid 2.5px black;
     background-color: gold;
     grid-column: 1;
     grid-row: 1/-1;
@@ -7,6 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
+    position: absolute;
+    height: 505px;
+    width: 150px;
+    transition: left 100ms linear;
 }

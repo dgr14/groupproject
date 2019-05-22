@@ -46,7 +46,7 @@ class Signup extends Component {
         return (
             <div className={Styles.formWrapper}>
                 <form onSubmit={this.handleSubmit}>
-                    <h3>Sign Up</h3>
+                    <h3 className={Styles.signupHeader}>Sign Up</h3>
                     <input
                         onChange={this.handleChange}
                         value={this.state.username}

@@ -1,7 +1,6 @@
 .entryDiv{
-    grid-column: 2/-1;
-    border: 2.5px solid black;
+    grid-column: 1/-1;
     background-color: ivory;
-    height: 250px;
+    height: 100%;
     overflow-y: scroll;
 }

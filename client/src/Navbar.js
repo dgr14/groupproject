@@ -1,15 +1,17 @@
 import React from 'react'
 import Styles from './Navbar.module.css'
 import { withContext } from "./AppContext"
+import {Link} from "react-router-dom"
+
 
 function Navbar(props) {
     return (
-        <div className={Styles.navDiv}>
+        <div className={Styles.navDiv} style={props.toggle?{left: 0} : {left: -200}}>
              {/* here I would like to create a place for the user to be displayed */}
              {/* I'll have to get  */}
 
-            <button>New Expense</button>
-            <button>View Expenses</button>
+            <Link to = "/expenses/entry">New Expense</Link>
+            <Link to = "/expenses/expense">View Expenses</Link>
             <button onClick={() => props.logout()}>Logout</button>
         </div>
     )

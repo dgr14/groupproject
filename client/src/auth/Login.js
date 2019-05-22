@@ -44,21 +44,23 @@ class LoginForm extends Component {
 */
     render() {
         return (
-            <div className="form-wrapper">
+            <div className={Styles.formWrapper}>
                 <form onSubmit={this.handleSubmit}>
-                    <h3>Log In</h3>
-                    <input
-                        onChange={this.handleChange}
-                        value={this.state.username}
-                        name="username"
-                        type="text"
-                        placeholder="username"/>
-                    <input
-                        onChange={this.handleChange}
-                        value={this.state.password}
-                        name="password"
-                        type="password"
-                        placeholder="password"/>
+                    <h3 className={Styles.loginHeader}>Log In</h3>
+                    <div className={Styles.inputWrapper}>
+                        <input
+                            onChange={this.handleChange}
+                            value={this.state.username}
+                            name="username"
+                            type="text"
+                            placeholder="username"/>
+                        <input
+                            onChange={this.handleChange}
+                            value={this.state.password}
+                            name="password"
+                            type="password"
+                            placeholder="password"/>
+                    </div>
                     <button className={Styles.loginButton} type="submit">Submit</button>
                 </form>
                 {

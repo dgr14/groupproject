@@ -10,6 +10,7 @@ import Styles from "./Auth.module.css"
 function Auth() {
     return (
         <div className={Styles.authReturnDiv}>
+        <h1 className={Styles.mainTitleHeader}>Fin-Tracker</h1>
             <Login />
             <Signup />
         </div>
