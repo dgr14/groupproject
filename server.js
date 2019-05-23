@@ -3,7 +3,6 @@ const app = express();
 require("dotenv").config();
 const morgan = require("morgan");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
 const expressJwt = require("express-jwt");
 const PORT = process.env.PORT || 7000
 const path = require("path")
@@ -13,12 +12,11 @@ const path = require("path")
 app.use(express.json()) // req.body = Object from POST and PUT requests
 app.use(morgan('dev'))
 app.use(express.static(path.join(__dirname, "client", "build")))
-app.use("/api", expressJwt({ secret: process.env.SECRET }));
+
 
 // Connect to mongoDB
-mongoose.set('useCreateIndex', true);
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/expenses",
-    { useNewUrlParser: true },
+    { useNewUrlParser: true, useCreateIndex: true },
     (err) => {
         if (err) throw err;
         console.log("Connected to the database");
@@ -26,6 +24,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/expenses"
 );
 
 // Routes - Endpoints
+app.use("/api", expressJwt({ secret: process.env.SECRET }));
 app.use("/auth", require("./routes/authRouter"));
 app.use("/api/expenses", require('./routes/expenseRouter'))
 // app.use("/api/expenses", require("./routes/expenseRouter"));

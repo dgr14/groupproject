@@ -11,7 +11,7 @@
 h1 {
     /* font-size: 1.5em; */
 }
-button {
+button, a {
     background-color: green;
     border: none;
     color: gold;
@@ -19,6 +19,7 @@ button {
     padding: 7px 15px;
     cursor: pointer;
     font-size: 14px;
+    text-decoration: none;
 }
 input {
     margin: 2px 5px;

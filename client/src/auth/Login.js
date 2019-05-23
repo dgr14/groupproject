@@ -30,7 +30,7 @@ class LoginForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.login(this.state)
-            .then(() => this.props.history.push("/expenses"))
+            .then(() => this.props.history.push("/expenses/entry"))
             .catch(err => {
                 // this.setState({errorMessage: err.response.data.message})
             })

@@ -21,4 +21,5 @@ h1.headerText{
     top: 60px;
     border: solid 2px black;
     border-radius: 5px;
+    outline: none;
 }

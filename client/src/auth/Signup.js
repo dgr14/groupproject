@@ -30,7 +30,7 @@ class Signup extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.signup(this.state)
-            .then(() => this.props.history.push("/expenses"))
+            .then(() => this.props.history.push("/expenses/entry"))
             .catch(err => {
                 // this.setState({errorMessage: err.response.data.message})
             })

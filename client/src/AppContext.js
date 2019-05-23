@@ -27,6 +27,7 @@ export class AppContextProvider extends Component {
     getExpenses = () => {
         return expenseAxios.get("/api/expenses")
             .then(response => {
+                console.log(response)
                 this.setState({ expenses: response.data });
                 return response;
             })

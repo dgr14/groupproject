@@ -10,8 +10,8 @@ function Navbar(props) {
              {/* here I would like to create a place for the user to be displayed */}
              {/* I'll have to get  */}
 
-            <Link to = "/expenses/entry">New Expense</Link>
-            <Link to = "/expenses/expense">View Expenses</Link>
+            <Link className={Styles.navButton} to = "/expenses/entry">New Expense</Link>
+            <Link className={Styles.navButton} to = "/expenses/expense">View Expenses</Link>
             <button onClick={() => props.logout()}>Logout</button>
         </div>
     )

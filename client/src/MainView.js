@@ -7,7 +7,7 @@ import Styles from './App.module.css';
 import Entry from './Entry';
 import { withContext } from "./AppContext"
 import { Switch, Route } from "react-router-dom"
-import Expense from './components/Expense';
+import Expense from './components/ExpenseView';
 
 // import ExpenseList from './components/ExpenseList';
 
