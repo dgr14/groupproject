@@ -2,6 +2,7 @@
     border-right: solid 2.5px black;
     border-left: solid 2.5px black;
     background-color: gold;
+    position: relative;
     grid-column: 1;
     grid-row: 1/-1;
     display: flex;
@@ -13,6 +14,11 @@
     width: 150px;
     transition: left 100ms linear;
 }
-.navButton{
-    
+.userInfo{
+    justify-self: flex-start;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
 }

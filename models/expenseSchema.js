@@ -186,7 +186,12 @@ const expenseSchema = new Schema({
     },
     charitiesDate: {
         type: String
+    },
+    timeStamp: {
+        type: Date,
+        default: Date.now
     }
+
 })
                             // Model Name    // Model Blueprint
 module.exports = mongoose.model("Expense", expenseSchema)

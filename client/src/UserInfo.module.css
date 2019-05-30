@@ -1,0 +1,4 @@
+.userName{
+    display: flex;
+    flex-direction: column;
+}

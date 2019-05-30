@@ -25,8 +25,8 @@ class ExpenseList extends Component {
         this.state = {
             fullName: "", username: "", 
             mortgageOrRent: false, mortgageOrRentAmount: "", mortgageOrRentDate: "", 
-            heatingOilOrGas: false, 
-            oil: "", oilAmount: "",
+            heatingOilOrGas: false, heatingOilOrGasAmount: "", heatingOilOrGasDate: "",
+            oil: false, oilAmount: "", oilDate: "",
             cable: false,
             internet: false,
             water: false,

@@ -28,8 +28,8 @@ export default withContext(App);
 
 {/* 
 
-`<Route exact path={"/"} render={() => !props.token ? <Login page /> : <Redirect />} />`
-`<Route exact path={"/"} render={() => !props.token ? <Login page /> : <View />} />`
+<Route exact path={"/"} render={() => !props.token ? <Login page /> : <Redirect />} />`
+<Route exact path={"/"} render={() => !props.token ? <Login page /> : <View />} />`
                     
 
                 <Switch>
