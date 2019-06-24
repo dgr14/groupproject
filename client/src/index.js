@@ -7,10 +7,10 @@ import './style.css';
 import App from './App';
 
 ReactDOM.render(
-     <AppContextProvider>
-         <Router>
-             <App/>
-         </Router>
-     </AppContextProvider>,
-     document.getElementById("root")
- );
+    <AppContextProvider>
+        <Router>
+            <App/>
+        </Router>
+    </AppContextProvider>,
+    document.getElementById("root")
+);
