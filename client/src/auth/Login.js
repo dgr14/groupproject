@@ -47,7 +47,7 @@ class LoginForm extends Component {
             <div className={Styles.formWrapper}>
                 <form onSubmit={this.handleSubmit}>
                     <h3 className={Styles.loginHeader}>Log In</h3>
-                    <div className={Styles.inputWrapper}>
+                    <div className={Styles.inputLoginWrapper}>
                         <input
                             onChange={this.handleChange}
                             value={this.state.username}

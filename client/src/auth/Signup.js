@@ -47,18 +47,20 @@ class Signup extends Component {
             <div className={Styles.formWrapper}>
                 <form onSubmit={this.handleSubmit}>
                     <h3 className={Styles.signupHeader}>Sign Up</h3>
-                    <input
-                        onChange={this.handleChange}
-                        value={this.state.username}
-                        name="username"
-                        type="text"
-                        placeholder="Username"/>
-                    <input
-                        onChange={this.handleChange}
-                        value={this.state.password}
-                        name="password"
-                        type="password"
-                        placeholder="Password"/>
+                    <div className={Styles.inputLoginWrapper}>
+                        <input
+                            onChange={this.handleChange}
+                            value={this.state.username}
+                            name="username"
+                            type="text"
+                            placeholder="Username"/>
+                        <input
+                            onChange={this.handleChange}
+                            value={this.state.password}
+                            name="password"
+                            type="password"
+                            placeholder="Password"/>
+                    </div>
                     <button className={Styles.signupButton} type="submit">Create Account</button>
                 </form>
 

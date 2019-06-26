@@ -7,9 +7,9 @@
     flex-direction: column;
     justify-content: space-around;
 }
-.inputWrapper{
+/* .inputLoginWrapper{
     display: flex;
-}
+} */
 .loginHeader{
     font-size: 3em;
     font-weight: 300;
