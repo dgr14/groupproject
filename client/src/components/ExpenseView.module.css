@@ -12,6 +12,8 @@
     display: inline-block;
     width: 200px;
     text-align: left;
+    padding: 5px 10px;
+    margin: 2.5px 10px;
 }
 .titles{
     margin: 20px;
