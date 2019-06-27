@@ -27,10 +27,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dgr14/groupProject.git"
+    "url": "git+https://github.com/dgr14/groupproject.git"
   },
   "bugs": {
-    "url": "https://github.com/dgr14/groupProject/issues"
+    "url": "https://github.com/dgr14/groupproject/issues"
   },
-  "homepage": "https://github.com/dgr14/groupProject#readme"
+  "homepage": "https://github.com/dgr14/groupproject#readme"
 }
